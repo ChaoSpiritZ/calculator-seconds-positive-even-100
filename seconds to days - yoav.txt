@@ -1,0 +1,21 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Enter a number of seconds:");
+		string input = Console.ReadLine();
+		
+		int days = int.Parse(input) / 86400;
+		int left = int.Parse(input) % 86400;
+		int hours = left / 3600;
+		left = left % 3600;
+		int minutes = left / 60;
+		left = left % 60;
+		Console.WriteLine(days + " days");
+		Console.WriteLine(hours + " hours");
+		Console.WriteLine(minutes + " minutes");
+		Console.WriteLine(left + " seconds");
+	}
+}

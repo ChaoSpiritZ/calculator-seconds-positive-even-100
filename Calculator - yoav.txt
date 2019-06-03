@@ -1,0 +1,28 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Enter a number, an operation, then a number again:");
+		string num1 = Console.ReadLine();
+		string operation = Console.ReadLine();
+		string num2 = Console.ReadLine();
+		if (operation == "+")
+		{
+		Console.WriteLine(int.Parse(num1) + int.Parse(num2));	
+		}
+		if (operation == "-")
+		{
+		Console.WriteLine(int.Parse(num1) - int.Parse(num2));	
+		}
+		if (operation == "*")
+		{
+		Console.WriteLine(int.Parse(num1) * int.Parse(num2));	
+		}
+		if (operation == "/")
+		{
+		Console.WriteLine(int.Parse(num1) / int.Parse(num2));	
+		}
+	}
+}

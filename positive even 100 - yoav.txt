@@ -1,0 +1,37 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Enter a number:");
+		string num = Console.ReadLine();
+		
+		if (int.Parse(num) > 0)
+		{
+		Console.WriteLine(num + " is positive");	
+		}
+		else
+		{
+		Console.WriteLine(num + " is not positive");	
+		}
+		
+		if (int.Parse(num) % 2 == 0)
+		{
+		Console.WriteLine(num + " is even");	
+		}
+		else
+		{
+		Console.WriteLine(num + " is odd");	
+		}
+		
+		if (int.Parse(num) > 100)
+		{
+		Console.WriteLine(num + " is bigger than 100");	
+		}
+		else
+		{
+		Console.WriteLine(num + " is not bigger than 100");	
+		}
+	}
+}
